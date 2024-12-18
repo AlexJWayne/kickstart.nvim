@@ -8,6 +8,21 @@ vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 -- Diagnostic keymaps
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 
+-- Open File Explorer (Netrw)
+vim.keymap.set('n', '<leader>x', vim.cmd.Ex, { desc = 'File E[x]plorer' })
+
+-- Open the Lazy plugin manager
+vim.keymap.set('n', '<leader>vl', vim.cmd.Lazy, { desc = 'Lazy' })
+
+-- Save buffer
+vim.keymap.set('n', '<C-s>', vim.cmd.w, { desc = 'Save Buffer' })
+vim.keymap.set('i', '<C-s>', vim.cmd.w, { desc = 'Save Buffer' })
+
+-- Go to the dashboard
+vim.keymap.set('n', '<leader>vd', ':lua Snacks.dashboard()<CR>', { desc = 'Dashboard' })
+
+-- Don't know what these do yet.
+
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
 -- is not what someone will guess without a bit more experience.
