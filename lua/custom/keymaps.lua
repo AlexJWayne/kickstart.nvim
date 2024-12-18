@@ -9,7 +9,7 @@ vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 
 -- Open File Explorer (Netrw)
-vim.keymap.set('n', '<leader>x', vim.cmd.Ex, { desc = 'File E[x]plorer' })
+vim.keymap.set('n', '<leader>x', '<CMD>Oil<CR>', { desc = 'File E[x]plorer' })
 
 -- Open the Lazy plugin manager
 vim.keymap.set('n', '<leader>vl', vim.cmd.Lazy, { desc = 'Lazy' })
