@@ -35,5 +35,8 @@ _/ /|  / /  __/ /_/ /_ |/ / _  / _  / / / / /
 
     -- Smoothly animate scrolling.
     scroll = { enabled = true },
+
+    -- Prettier notifications.
+    notifier = { enabled = true },
   },
 }
