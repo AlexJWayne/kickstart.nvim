@@ -70,6 +70,9 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 15
 
+-- Hide row under status line when not entering a command.
+vim.opt.cmdheight = 0
+
 require 'custom.keymaps'
 
 -- [[ Basic Autocommands ]]
