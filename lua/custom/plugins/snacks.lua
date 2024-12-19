@@ -1,6 +1,9 @@
 return {
   'folke/snacks.nvim',
+  priority = 1000,
+  lazy = false,
 
+  ---@type snacks.Config
   opts = {
     dashboard = {
       preset = {
@@ -26,5 +29,11 @@ _/ /|  / /  __/ /_/ /_ |/ / _  / _  / / / / /
         },
       },
     },
+
+    -- Moves vim command input to the center as a float.
+    input = { enabled = true },
+
+    -- Smoothly animate scrolling.
+    scroll = { enabled = true },
   },
 }
