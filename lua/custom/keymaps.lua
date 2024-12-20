@@ -24,6 +24,9 @@ vim.keymap.set('n', '<leader>vd', ':lua Snacks.dashboard()<CR>', { desc = 'Dashb
 -- Toggle Hardtime.nvim if its getting in my way.
 vim.keymap.set('n', '<leader>tt', '<CMD>Hardtime toggle<CR>', { desc = 'Hardtime' })
 
+-- Toggle zen mode
+vim.keymap.set('n', '<leader>tz', '<CMD>ZenMode<CR>', { desc = 'Zen' })
+
 -- Don't know what these do yet.
 
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
