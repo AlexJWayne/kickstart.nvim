@@ -16,7 +16,7 @@ vim.keymap.set('n', '<leader>vl', vim.cmd.Lazy, { desc = 'Lazy' })
 
 -- Save buffer
 vim.keymap.set('n', '<C-s>', vim.cmd.w, { desc = 'Save Buffer' })
-vim.keymap.set('i', '<C-s>', vim.cmd.w, { desc = 'Save Buffer' })
+vim.keymap.set('i', '<C-s>', '<Esc>l<CMD>w<CR>', { desc = 'Save Buffer' })
 
 -- Go to the dashboard
 vim.keymap.set('n', '<leader>vd', ':lua Snacks.dashboard()<CR>', { desc = 'Dashboard' })
