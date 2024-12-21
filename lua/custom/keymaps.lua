@@ -8,9 +8,6 @@ vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 -- Diagnostic keymaps
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 
--- Open File Explorer (Netrw)
-vim.keymap.set('n', '<leader>x', '<CMD>Oil<CR>', { desc = 'File E[x]plorer' })
-
 -- Open the Lazy plugin manager
 vim.keymap.set('n', '<leader>vl', vim.cmd.Lazy, { desc = 'Lazy' })
 
@@ -27,7 +24,8 @@ vim.keymap.set('n', '<leader>tt', '<CMD>Hardtime toggle<CR>', { desc = 'Hardtime
 -- Toggle zen mode
 vim.keymap.set('n', '<leader>tz', '<CMD>ZenMode<CR>', { desc = 'Zen' })
 
--- Don't know what these do yet.
+-- Open a new terminal
+vim.keymap.set('n', '<leader>wt', vim.cmd.terminal, { desc = 'New Terminal' })
 
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
