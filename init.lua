@@ -71,7 +71,7 @@ vim.opt.cursorline = true
 vim.opt.scrolloff = 15
 
 -- Hide row under status line when not entering a command.
-vim.opt.cmdheight = 0
+-- vim.opt.cmdheight = 0
 
 require 'custom.keymaps'
 
