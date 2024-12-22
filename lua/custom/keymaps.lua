@@ -15,6 +15,9 @@ vim.keymap.set('n', '<leader>vl', vim.cmd.Lazy, { desc = 'Lazy' })
 vim.keymap.set('n', '<C-s>', vim.cmd.w, { desc = 'Save Buffer' })
 vim.keymap.set('i', '<C-s>', '<Esc>l<CMD>w<CR>', { desc = 'Save Buffer' })
 
+-- Redo with `U` like helix
+vim.keymap.set('n', 'U', '<C-r>', { desc = 'Redo' })
+
 -- Go to the dashboard
 vim.keymap.set('n', '<leader>vd', ':lua Snacks.dashboard()<CR>', { desc = 'Dashboard' })
 
