@@ -1,3 +1,10 @@
+return {
+  'rebelot/kanagawa.nvim',
+  init = function()
+    vim.cmd.colorscheme 'kanagawa-wave'
+  end,
+}
+
 -- return {
 --   'rose-pine/neovim',
 --   name = 'rose-pine',
@@ -6,15 +13,15 @@
 --   end,
 -- }
 
-return {
-  'folke/tokyonight.nvim',
-  lazy = false,
-  priority = 1000,
-  opts = {},
-  init = function()
-    vim.cmd.colorscheme 'tokyonight-night'
-  end,
-}
+-- return {
+--   'folke/tokyonight.nvim',
+--   lazy = false,
+--   priority = 1000,
+--   opts = {},
+--   init = function()
+--     vim.cmd.colorscheme 'tokyonight-night'
+--   end,
+-- }
 
 -- return {
 --   'catppuccin/nvim',
