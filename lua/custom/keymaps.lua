@@ -13,7 +13,7 @@ vim.keymap.set('n', '<leader>vl', vim.cmd.Lazy, { desc = 'Lazy' })
 
 -- Save buffer
 vim.keymap.set('n', '<C-s>', vim.cmd.w, { desc = 'Save Buffer' })
-vim.keymap.set('i', '<C-s>', '<Esc>l<CMD>w<CR>', { desc = 'Save Buffer' })
+vim.keymap.set('i', '<C-s>', '<Esc><Left><cmd>w<CR>', { desc = 'Save Buffer' })
 
 -- Redo with `U` like helix
 vim.keymap.set('n', 'U', '<C-r>', { desc = 'Redo' })
@@ -28,7 +28,15 @@ vim.keymap.set('n', '<leader>tt', '<CMD>Hardtime toggle<CR>', { desc = 'Hardtime
 vim.keymap.set('n', '<leader>tz', '<CMD>ZenMode<CR>', { desc = 'Zen' })
 
 -- Open a new terminal
-vim.keymap.set('n', '<leader>wt', vim.cmd.terminal, { desc = 'New Terminal' })
+vim.keymap.set('n', '<leader>rt', vim.cmd.terminal, { desc = 'New Terminal' })
+
+-- Tree navigation -- TODO
+vim.keymap.set({ 'n', 'v' }, '<S-Up>', '<cmd>Treewalker Up<cr>', { noremap = true, silent = true })
+vim.keymap.set({ 'n', 'v' }, '<S-Down>', '<cmd>Treewalker Down<cr>', { noremap = true, silent = true })
+vim.keymap.set({ 'n', 'v' }, '<S-Right>', '<cmd>Treewalker Right<cr>', { noremap = true, silent = true })
+vim.keymap.set({ 'n', 'v' }, '<S-Left>', '<cmd>Treewalker Left<cr>', { noremap = true, silent = true })
+vim.keymap.set('n', '<A-Down>', '<cmd>Treewalker SwapDown<cr>', { noremap = true, silent = true })
+vim.keymap.set('n', '<A-Up>', '<cmd>Treewalker SwapUp<cr>', { noremap = true, silent = true })
 
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
