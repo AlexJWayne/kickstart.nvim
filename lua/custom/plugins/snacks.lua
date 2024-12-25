@@ -31,7 +31,7 @@ _/ /|  / /  __/ /_/ /_ |/ / _  / _  / / / / /
     },
 
     -- Moves vim command input to the center as a float.
-    input = { enabled = true },
+    -- input = { enabled = true },
 
     -- Smoothly animate scrolling.
     scroll = { enabled = true },
