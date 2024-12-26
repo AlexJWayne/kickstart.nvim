@@ -16,7 +16,9 @@ return {
     vim.keymap.set('n', '<leader>a', function()
       mark.add_file()
     end, { desc = '[A]dd to marked files' })
-    vim.keymap.set('n', '<leader><leader>', '<CMD>Telescope harpoon marks<CR>', { desc = '[ ] Show marked files' })
+    vim.keymap.set('n', '<leader><leader>', function()
+      ui.toggle_quick_menu()
+    end, { desc = '[ ] Show marked files' })
 
     vim.keymap.set('n', '<A-t>', function()
       ui.nav_file(1)
