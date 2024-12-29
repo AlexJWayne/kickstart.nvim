@@ -1,9 +1,9 @@
-return {
-  'rebelot/kanagawa.nvim',
-  init = function()
-    vim.cmd.colorscheme 'kanagawa-wave'
-  end,
-}
+-- return {
+--   'rebelot/kanagawa.nvim',
+--   init = function()
+--     vim.cmd.colorscheme 'kanagawa-wave'
+--   end,
+-- }
 
 -- return {
 --   'rose-pine/neovim',
@@ -32,17 +32,21 @@ return {
 --   end,
 -- }
 
--- return {
---   'sainnhe/gruvbox-material',
---   lazy = false,
---   priority = 1000,
---   config = function()
---     -- Optionally configure and load the colorscheme
---     -- directly inside the plugin declaration.
---     vim.g.gruvbox_material_enable_italic = true
---     vim.cmd.colorscheme 'gruvbox-material'
---   end,
--- }
+return {
+  'sainnhe/gruvbox-material',
+  lazy = false,
+  priority = 1000,
+  config = function()
+    -- Optionally configure and load the colorscheme
+    -- directly inside the plugin declaration.
+    vim.g.gruvbox_material_foreground = 'hard'
+    vim.g.gruvbox_material_background = 'hard'
+    -- vim.g.gruvbox_material_enable_bold = true
+    vim.g.gruvbox_material_ui_contrast = 'high'
+
+    vim.cmd.colorscheme 'gruvbox-material'
+  end,
+}
 
 -- return {
 --   'Mofiqul/vscode.nvim',
